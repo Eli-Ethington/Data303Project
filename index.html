@@ -71,10 +71,13 @@
         <p class="navhelper">
             View the original report <a href="https://hai.stanford.edu/ai-index/2023-ai-index-report/public-opinion">HERE</a>
         </p>
-        <address>Created by Brennen Card, Eli Ethington, and Jack Zamary</address>
+        <address>Created by Brennen Card, Eli Ethington, and Jack Zamary | Hero section courtesy of <a href="https://www.sliderrevolution.com/resources/css-header/">Slider Revolution</a></address>
     </footer>
 
 </div>
+
+<!-- JavaScript for the visualizations -->
+<!-- sourced from https://www.sliderrevolution.com/resources/css-header/ -->
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 <script>
@@ -93,6 +96,19 @@ $(window).on('scroll', function() {
             'top': -scrolled * .5
         });
     }
+});
+
+// Set the height of the iframe to the height of the content
+// Each visualization will now fit to the content of the iframe
+
+document.querySelectorAll('.viz-container iframe').forEach(function(iframe) {
+    iframe.addEventListener('load', function() {
+        try {
+            iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
+        } catch (e) {
+            iframe.style.height = '620px';
+        }
+    });
 });
 </script>
 
