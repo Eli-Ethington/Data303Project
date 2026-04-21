@@ -19,8 +19,34 @@
     </header>
 
     <main id="main">
+
+        <section class="text-section">
+            <h2>Introduction</h2>
+            <p>Our project focuses on global perceptions of AI and they may vary across countries 
+                and cultures. In 2023 Ipsos conducted a “Global Views on A.I.” report with the aim 
+                of better understanding how people across the world feel about artificial intelligence a
+                nd how they expect it will impact their lives. Major topics in the report included 
+                trust in AI, its impact on daily life, and jobs. Later that year, the Pew Research 
+                Center and Stanford University's HAI lab published similar reports that referenced 
+                the original Ipsos article. Our project takes data from these reports to create unique
+                 interactive visualizations that display global perception in AI.
+            </p>
+        </section>
+
         <!-- Cleaned up Tableau HTML code for Choropleth Map from Tableau Public -->
         <section class="viz-section">
+            <h3>Looking at the Global Scale</h3>
+            <p>This choropleth map uses data from the Pew Research Center 2025 Global attitudes survey. 
+                People from the United States, the European Union, and China were asked the following 
+                question: “How much trust do you have in each of the following countries and 
+                organizations to regulate the use of artificial intelligence effectively – a lot of 
+                trust, some trust, not too much trust, no trust at all, or are you not sure?” The 
+                percentage of people giving each response from each population and for each country 
+                was recorded. The choropleth map displays the proportion of people who responded “a 
+                lot of trust” or “some trust.” The pages of the map alternate between the population 
+                giving the responses. The tooltip is a bar chart that displays the percentage of people
+                who chose each of the categories given in the survey question, excluding "not sure” 
+                and "refused," as their sum can be inferred from the other options.</p>
             <div class="viz-container">
                 <div class='tableauPlaceholder' id='viz1776644257337'>
                     <noscript><a href='#'><img alt='Trust in Other Countries AI Regulation' src='https://public.tableau.com/static/images/Ch/ChoroplethMapProject/Map/1_rss.png' style='border: none' /></a></noscript>
@@ -54,15 +80,57 @@
         </section>
 
         <section class="viz-section">
+            <h3>The Job Market and Your Job</h3>
+            <p>This visualization utilizes data from the HAI lab at Stanford University, presented 
+                as an open-source CSV file containing survey responses from employed adults across 
+                32 countries. Economic Freedom Score data was obtained from the Heritage Foundation’s 
+                Index of Economic Freedom, with 2024 figures used to align with the 2024 survey data. 
+                Countries were then binned into four Economic Freedom Score ranges (Low: 45-55, 
+                Mid-low: 55-65, mid-high: 65-75, and High: 75-85) and plotted against two AI 
+                optimism metrics: the percentage of respondents expecting AI to improve their 
+                specific job and the percentage expecting AI to improve the job market broadly. 
+                A global average of all 32 countries is marked as a black diamond for consistent 
+                reference across all slides</p>
+            <br>
+            <p>
+                The visualization reveals a notable inverse trend: countries with lower Economic 
+                Freedom Scores tend to cluster toward the upper right of the chart, indicating 
+                greater optimism about AI’s impact on both their personal jobs and the job market
+                overall. Higher Economic Freedom Score countries, by contrast, cluster closer to 
+                the origin, suggesting more cautious expectations about AI-driven improvements. 
+                This pattern may suggest that workers in more state-directed or developing economies 
+                view AI as a greater opportunity for upward mobility and job improvement, possibly 
+                because they have more to gain from technological disruption. In contrast, workers 
+                in highly market-oriented economies may already operate in competitive, dynamic labor 
+                markets and therefore hold more cautious or realistic expectations about AI’s net 
+                benefit. Though the relationship is completely correlational, it raises an interesting 
+                question regarding how the economic systems and labor market structures shape workers’
+                expectations and attitudes toward emerging technologies like AI.
+            </p>
             <div class="viz-container">
                 <iframe src="Assets/ai_optimism_scatterplot.html" title="AI Optimism Scatterplot"></iframe>
             </div>
         </section>
 
         <section class="viz-section">
+            <h3>Will you be replaced by AI?</h3>
+            <p>
+                This graphic utilizes data from the Ipsos article and pew research report. The original 
+                data was collected from 14,782 employed adults under the age of 75 across 31 countries. 
+                The data was specifically gathered from the HAI Lab at Standford university as an 
+                open-source CSV file. Data preprocessing and engineering were conducted to include the 
+                total number of people surveyed in addition to the percentage values for each category 
+                present in the CSV file. The graph highlights global opinions for the likelihood that 
+                AI will change and eventually replace one's job.
+            </p>
             <div class="viz-container">
                 <iframe src="Assets/prj_subplots.html" title="Project Subplots"></iframe>
             </div>
+        </section>
+
+        <section class="text-section">
+            <h2>Conclusion</h2>
+            <p>Paragraph text goes here.</p>
         </section>
 
     </main>
